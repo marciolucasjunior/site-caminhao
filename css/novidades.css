@@ -3,12 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    background-color:#F0F2F5 ;
+    font-weight: 900;
+    background-color:white;
 }
 
 img,
@@ -121,13 +122,11 @@ button {
 }
 
 /*fim do header */
-
-
 main{
     margin: 0px 40px 0px 40px;
-    background-color:#F0F2F5;
-}
+    background-color: white;
 
+}
 .links_main{
     font-size: 11px;
     margin-top: 60px;
@@ -140,152 +139,119 @@ hr{
     margin-top: 20px;
 }
 
-.mes_anual{
+.container_geral{
     display: flex;
-    margin-top: 40px;
-    border: 1px solid #153E4D;
-    height: 40px;
-    width: 140px;
+    border: 2px solid orange;
 }
 
-.mes_anual > div {
+
+.container_cards{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    border: 2px solid black;
+   
+}
+.cards{
+    border: 2px solid yellow; 
+    width:260px;
+    height: 350px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+}
+
+.img_cards{
+/* border: 2px solid black; */
+ width: 100%;
+ height: 130px;
+}
+
+.img_cards > img{
+ width: 100%;
+ height: 100%;
+}
+
+.info_cards{
+    
+    margin-top: 15px;
+    width: 100%;
+    height: 203px;
+    border: 2px solid rgb(187, 229, 255); 
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  /*  border: 2px solid black; */
+    text-align: center;
+    height: 50%;
+}
+
+.texto2{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    height: 50%;
+}
+
+.texto2 > div{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
-    border: 1px solid #153E4D;
+    font-size: 12px;
     height: 100%;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
+    width: 50%;
+  /*  border: 2px solid black; */
 }
 
-.mes{
-    background: #153E4D;
-    color: white;
+.texto2 > div > p > img{
+    width: 18px;
+    margin-left: 9px;
+    margin-right: 9px;
 }
 
-.principal{
+.texto2 > div >  p {
     display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    margin-left: 0px;
+   /* border: 1px solid black; */
 }
-.planos{
-    
-    margin-top: 40px;
-    font-weight: 400;
-    width: 270px;
-    height: 500px;
+
+
+.nav_post{
+
+   width: 540px;
+
+}
+
+.nav_post > input {
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #ECEFF3;
+}
+
+.nav_post > p {
+    font-size: 14px;
+    margin-top: 15px;
 }
 
 ul{
     list-style: none;
- 
-  
 }
-
-.cards_ul {
-    background-color: white;
-}
-
-li{
-    
-    font-size: 14px;
-    padding: 16px
-}
-
-#titulo_principal{
-    margin: auto;
-    background-color: #153E4D;
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-
-}
-
-#titulo{
-    width: 70%;
-    margin: auto;
-    background-color: #153E4D;
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.zebra{
-    background-color: white;
-}
-
-.container_cards{
-    display: flex;
-    position: relative;
-    bottom: 40px;
-    width: 100%;
-    height: 550px;
-    margin-left: 40px;
-}
-
-.cards{
-    border-top: 4px solid #153E4D ;
-    width: 35%;
-    height: 600px;
-    background-color: white;
-    text-align: center;
-    box-shadow: 0px  1px 5px rgba(0, 0, 0, 0.433);
-  
- 
-}
-
 h2{
-    width: 80%;
-    margin: auto;
-    font-size: 20px;
-    margin-bottom: 25px;
-    color: #153E4D;
-    font-weight: bolder;
+ font-size: 18px;
+ margin-top: 15px;
 }
 
-li > img {
-    width: 14px;
-}
-
-.destaque{
-    width: 70%;
-    margin: auto;
-    background-color:#F0F2F5;
-}
-
-.etiqueta{
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-bottom: 30px;
-padding: 6px;
-margin: auto;
-margin-right: 0;
-font-size: 12px;
-width: 80px;
-background-color: #1bd249;
-color: white;
-font-weight: bolder;
-
-}
-
-.etiqueta > div {
- 
-    padding: 6px;
-
-}
-
-#logista{
-    width: 50%;
-    background-color: #6C98E1;
-}
-#plus{
-    width: 40%;
-    background-color:#1bd249;
-
-}
-/*inicio footer */
+/*footer*/
 footer {
     display: flex;
     flex-direction: column;

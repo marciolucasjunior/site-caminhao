@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -50,14 +51,9 @@ nav {
 
 #cadastro{
     color: #A5A7A7;
-    text-decoration: none;
- }
- 
- #cadastro:hover{
-    color: white;
     transition-duration: 2ms;
- }
-
+    text-decoration: none;
+}
 
 
 .so_caminhao {
@@ -119,13 +115,12 @@ button {
     border-radius: none;
     margin-right: 20px;
 }
-
-/*fim do header */
-
+/*header */
 
 main{
     margin: 0px 40px 0px 40px;
     background-color:#F0F2F5;
+   /* border: 1px solid black; */
 }
 
 .links_main{
@@ -140,152 +135,167 @@ hr{
     margin-top: 20px;
 }
 
-.mes_anual{
-    display: flex;
-    margin-top: 40px;
-    border: 1px solid #153E4D;
-    height: 40px;
-    width: 140px;
+.container_form{
+   display: flex;
+   /* border: 1px solid black; */
+
 }
 
-.mes_anual > div {
+.container_jatenho_conta{
+ /*   border: 2px solid red; */
+ margin-top: 40px;
+}
+
+
+.fomr_jatenho_conta{
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    border: 1px solid #153E4D;
-    height: 100%;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #153E4D;
+    width: 350px;
+}
+
+#email{
+    font-size: 14px;
+    background-color:#F0F2F5;
+    border: none;
+    margin: 18px 0px 18px 0px;
+    padding: 12px;
     width: 100%;
-    text-align: center;
+}
+
+#senha{
+    font-size: 14px;
+    background-color:#F0F2F5;
+    border: none;
+    margin: auto;
+    padding: 12px;
+    margin: 18px 0px 18px 0px;
+    width: 100%;
+}
+
+.p_form{
+    margin: auto;
+    margin-left: 0px;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+}
+
+.container_checkbox{
+    display: flex;
+    width: 100%;
+   
+}
+
+input[type="checkbox"]{
+    background-color:#F0F2F5;
+    margin-top: 20px;
+    width: 18px;
+    border-radius: 5px;
+}
+
+.div_relembrar{
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: 900;
+    margin-left: 5px;
+    color: #8A9EA6;
     cursor: pointer;
 }
 
-.mes{
-    background: #153E4D;
-    color: white;
-}
-
-.principal{
-    display: flex;
-}
-.planos{
-    
-    margin-top: 40px;
-    font-weight: 400;
-    width: 270px;
-    height: 500px;
-}
-
-ul{
-    list-style: none;
- 
-  
-}
-
-.cards_ul {
-    background-color: white;
-}
-
-li{
-    
+.div_esqueceu{
+    margin-top: 22px;
     font-size: 14px;
-    padding: 16px
+    font-weight: 900;
+    margin-left: 27px;
+    color: #8A9EA6;
+    cursor: pointer;
 }
 
-#titulo_principal{
+.div_esqueceu:hover{
+   color: white;
+}
+
+#relembrar{
+    height: 20px;
+}
+
+#btn_entrar{
     margin: auto;
-    background-color: #153E4D;
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-
-}
-
-#titulo{
-    width: 70%;
-    margin: auto;
-    background-color: #153E4D;
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.zebra{
-    background-color: white;
-}
-
-.container_cards{
-    display: flex;
-    position: relative;
-    bottom: 40px;
-    width: 100%;
-    height: 550px;
-    margin-left: 40px;
-}
-
-.cards{
-    border-top: 4px solid #153E4D ;
-    width: 35%;
-    height: 600px;
-    background-color: white;
-    text-align: center;
-    box-shadow: 0px  1px 5px rgba(0, 0, 0, 0.433);
-  
- 
-}
-
-h2{
-    width: 80%;
-    margin: auto;
-    font-size: 20px;
-    margin-bottom: 25px;
-    color: #153E4D;
-    font-weight: bolder;
-}
-
-li > img {
-    width: 14px;
-}
-
-.destaque{
-    width: 70%;
-    margin: auto;
-    background-color:#F0F2F5;
-}
-
-.etiqueta{
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-bottom: 30px;
-padding: 6px;
-margin: auto;
-margin-right: 0;
-font-size: 12px;
-width: 80px;
-background-color: #1bd249;
-color: white;
-font-weight: bolder;
-
-}
-
-.etiqueta > div {
- 
-    padding: 6px;
-
-}
-
-#logista{
+    margin-left: 0px;
+    margin-top: 25px;
     width: 50%;
-    background-color: #6C98E1;
 }
-#plus{
-    width: 40%;
-    background-color:#1bd249;
+
+.container_form_cadastro{
+ /*   border: 1px solid blue; */
+   
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.form_cadastro{
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid #153E4D;
+    margin-top: 40px;
+    background-color: white;
+
+    box-shadow: 0px  1px 5px rgba(0, 0, 0, 0.433);
+}
+
+.div_form {
+    display: flex;
+
+    width: 100%;
+    margin: 25px;
+   /* border: 1px solid yellow; */
+    flex-direction: column;
 
 }
-/*inicio footer */
+
+.div_form > p {
+    font-weight: bolder;
+    font-size: 15px;
+    color: #153E4D;
+}
+
+.div_form > input {
+    font-size: 14px;
+    background-color:#F0F2F5;
+    border: none;
+    margin: 18px 0px 18px 0px;
+    padding: 12px;
+    width: 100%;
+}
+
+.container_checkbox_anunciar{
+display: flex;   
+}
+
+#anunciar{
+    margin: 0px;
+    width: 18px;
+    border-radius: 5px;
+}
+
+.container_checkbox_anunciar > p {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+#btn_cadastro{
+    font-size: 13px;
+    background-color: #a9b7cc;
+    margin-top: 25px;
+    width: 60%;
+}
+
+/*footer*/
 footer {
     display: flex;
     flex-direction: column;

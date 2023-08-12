@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color:white;
+}
+
+img,
+a,
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17AC3D;
+}
+
+.container_login {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #153E4D;
+}
+
+.container_login>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin: auto;
+    margin-right: 15px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    height: 100px;
+    background-color: #153E4D;
+}
+
+#cadastro{
+   color: #A5A7A7;
+   text-decoration: none;
+}
+
+#cadastro:hover{
+   color: white;
+   transition-duration: 2ms;
+}
+
+.so_caminhao {
+    width: 210px;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.links > a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 40px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.links>a:hover {
+    color: #17AC3D;
+}
+
+.icones {
+    display: flex;
+    width: 150px;
+    margin-right: 60px;
+
+}
+
+.icones>img {
+    width: 32px;
+    margin: auto;
+}
+
+
+
+.links>img {
+    width: 32px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+    padding: 12px;
+    font-weight: bolder;
+    color: white;
+    background-color: #1bd249;
+    border: none;
+    border-radius: 2px;
+}
+
+.btn_v {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 45px;
+    border: none;
+    border-radius: none;
+    margin-right: 20px;
+}
+
+ main{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+ }
+
+ .container_pesquisa{
+    display: flex;
+    background-color: #2A5066;
+    flex-direction: column;
+    align-items: center;
+    width: 265px;
+   height: 670px;
+ }
+
+ h3{
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin: 15px;
+ }
+ .container_pesquisa > select{
+    width: 80%;
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 15px;
+ }
+
+ .container_pesquisa >  p {
+    color: white;
+    width: 80%;
+    font-size: 12px;
+    margin: 15px 0px 15px 0px;
+    font-weight: 900;
+ }
+
+ #campo_busca{
+    border: 1px solid white;
+    background-color: #153E4D;
+ }
+
+ #select_busca{
+    border: 1px solid white;
+    background-color: #153E4D;
+ }
+
+ #resetar{
+   width: 80%;
+   text-align: right;
+ }
+ input{
+    width: 69%;
+    padding: 12px;
+ }
+
+ .container_caminhoes{
+    display: flex;
+    width: 100%;
+    height: 170px;
+   /* border: 1px solid black; */
+ }
+
+ .qta{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 5px;
+    color:#1BC744;
+ }
+
+.images_cami{
+  /*  border: 1px solid black; */
+    max-height: 100%;
+    max-width: 260px;
+ }
+
+ .images_cami > img {
+    width: 100%;
+    height: 100%;
+ }
+
+ .titulo_caminhao{
+    font-size: 22px;
+    font-weight: 900;
+    margin-left: 10px;
+ }
+
+ .informacoes_caminhao{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+   /* border: 1px solid blue; */
+
+ }
+
+ .opcoes{
+    display: flex;
+    font-size: 10px;
+   /* border: 1px solid yellow; */
+    width: 100%;
+    margin: auto;
+
+ }
+
+ .opcoes > div{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgb(211, 209, 209);
+    width: 100%;
+ }
+
+ .opcoes > div > img {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 0px;
+ }
+
+
+ .preco{
+    display: flex;
+    background-color:#1BC744 ;
+    color: white;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    width: 150px;
+    height: 50px;
+
+ }
+
+ .mini_opcoes{
+    margin-left: 10px;
+ }
+
+ .destaque{
+    font-size: 13px;
+    font-weight: 900;
+ }
+
+ .container_loguinho{
+    display: flex;
+    margin-left: 10px;
+ }
+
+ .loguinho > img {
+    border: 1px solid rgb(171, 171, 255);
+    height: 100%;
+    border-radius: 3px;
+    width: 125px;
+ }
+
+ .telefone{
+    font-size: 13px;
+    margin-left: 20px;
+    color: blue;
+ }
+
+ hr{
+    margin: 40px 0px 40px 0px;
+ }
+ section{
+  /*  border: 1px solid black; */
+    width: 80%;
+    margin-left: 25px;
+ }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+
+
+.div_footer1 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: #232628;
+    color: white;
+    height: 215px;
+}
+
+.div_footer2 {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #153E4D;
+    height: 215px;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+.text>h3 {
+    margin-bottom: 30px;
+}
